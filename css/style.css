@@ -594,8 +594,8 @@ width: 100%;
 
 .contact
 {
-    min-height: auto;
-    padding-bottom: 7rem;
+    min-height: 100vh;
+    
 }
 .contact h2{
     display: inline-block;
