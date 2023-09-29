@@ -188,6 +188,8 @@ section
 .btn-box .btn:hover
 {
     color: var(--main-color);
+   
+
 }
 
 .btn-box .btn:nth-child(2)
@@ -250,7 +252,10 @@ section
 }
 .home-sci a:hover
 {
-    color: var(--bg-color);
+    /* color: var(--bg-color); */
+    background: #0ef;
+    color: #081b29;
+    box-shadow: 0 0 2rem #0ef;
 }
 .home-sci a::before
 {
@@ -594,8 +599,8 @@ width: 100%;
 
 .contact
 {
-    min-height: 150vh;
-    
+    min-height: auto;
+    padding-bottom: 7rem;
 }
 .contact h2{
     display: inline-block;
@@ -730,6 +735,8 @@ width: 100%;
 .footer-iconTop a:hover i
 {
     color: var(--main-color);
+    opacity: 0; /* Initially set to 0 */
+    transition: opacity 0.5s ease;
 }
 
 /* ANIMATION RELOAD AND SCROLL */
@@ -822,7 +829,7 @@ section:nth-child(odd) .animate.scroll,
 }
 
 
-@media screen and  (width < 768px)
+@media screen and (max-width: 768px)
 {
     .header{
         background: var(--bg-color);
@@ -893,9 +900,7 @@ section:nth-child(odd) .animate.scroll,
         display: flex;
         flex-direction: column;
     }
-    
-
-    .home-sci {
+     .home-sci {
         width: 160px;
     }
 
@@ -908,6 +913,8 @@ section:nth-child(odd) .animate.scroll,
         background-color: var(--bg-color);
         opacity: .99;
     }
+   
+   
 }
 
 
