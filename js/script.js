@@ -1,3 +1,58 @@
+alert("Welcome To Harsh's Portfolio Website.");
+
+//WEBSITE SECURITY
+
+//Prevent Right Click
+document.oncontextmenu = function() { 
+    alert("Right Click is Disabled By Owner ")
+    return false;
+ }
+
+
+ //Still anyone can inspect elements by F12 key. View Page source by Ctrl + U key. Copy by Ctrl + C and also Do Paste By Ctrl + V. Let's Prevent This
+ document.onkeydown = e => {
+    //Prevent F12 key
+    if(e.key == "F12"){
+        alert('You are not allowed to inspect elements of this website !');
+        return false;
+
+    }
+
+//Prevent Showing Page Source By Ctrl + U
+if (e.ctrlKey && e.key === "u") {
+
+    alert('View Page Source Disabled By The Ownner.');
+        return false;
+}
+
+//Prevent Copying Anything From The Page
+if(e.ctrlKey &&  e.key == "c")
+{
+    alert("Don't Try To Copy Page Elements.")
+    return false;
+}
+
+//Prevent Paste Anything From Other Source
+
+if(e.ctrlKey && e.key == "v")
+{
+    alert("Don't Try To Paste Anything To Page.")
+    return false;
+}
+
+ }
+
+
+
+
+
+
+
+
+
+
+
+//Typeriter Effects
 var typed = new Typed(".text", {
     strings:["Fresher", "Frontend Developer", "Youtuber"],
     typeSpeed: 100,
